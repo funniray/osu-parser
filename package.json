@@ -1,6 +1,6 @@
 {
   "name": "osu-parser",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "converts osu files into javascript objects",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nojhamster/osu-parser.git"
+    "url": "https://github.com/funniray/osu-parser.git"
   },
   "keywords": [
     "osu",
@@ -21,7 +21,7 @@
   "author": "nojhamster",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nojhamster/osu-parser/issues"
+    "url": "https://github.com/funniray/osu-parser/issues"
   },
-  "homepage": "https://github.com/nojhamster/osu-parser"
+  "homepage": "https://github.com/funniray/osu-parser"
 }

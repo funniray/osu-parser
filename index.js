@@ -164,12 +164,22 @@ function beatmapParser() {
      * 1: circle
      * 2: slider
      * 8: spinner
+     * 128: Hold
      */
     if ((objectType & 1) == 1) {
       // Circle
       beatmap.nbCircles++;
       hitObject.objectName = 'circle';
       hitObject.additions  = parseAdditions(members[5]);
+    } if ((objectType & 128) == 128) {
+      // Hold (osu!mania)
+      hitObject.objectName = 'hold';
+
+      var additionArray = members[5].split(':');
+      hitObject.noteEnd = additionArray[0];
+      additionArray.shift();
+      hitObject.additions  = parseAdditions(additionArray.join(':'));
+      //console.log(members);
     } else if ((objectType & 8) == 8) {
       // Spinner
       beatmap.nbSpinners++;
